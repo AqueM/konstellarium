@@ -1,6 +1,5 @@
 ---
 linkName: Test Character from Faerun
-character: faerun.test
 ---
 {% layout "layouts/_character.liquid" %}
 {% assign character = faerun.test %}

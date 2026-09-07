@@ -11,6 +11,7 @@
 	}
 
 	body {
+		height: 100%;
 		margin: 0;
 		padding: 0.2rem;
 		overflow-x: hidden;
@@ -81,29 +82,14 @@
 	a:not(.noformat, .external-code *, .theme__border-oval *, .pagination__link, .layout__sitenav *) {
 		position: relative;
 		color: var(--color-accent);
-		padding: 0.2rem 0.5rem 0 0.5rem;
 		line-height: 1em;
 
-		&::after {
-			content: '(internal link)';
-			background-image: url("/assets/images/layout/font-awesome/right-to-bracket-solid-full.svg");
-			display: inline-block;
-			width: 1em;
-			height: 1em;
-			background-position: center;
-			background-repeat: no-repeat;
-			text-decoration: none;
-			overflow: hidden;
-			text-indent: 1em;
-			white-space: nowrap;
-			vertical-align: center;
-			margin-left: 0.2em;
-		}
 
 		&:hover {
 			display: inline;
 			transform: scale(1.1);
 			border-radius: var(--border-radius-single);
+			color: var(--color-dark);
 			background-color: var(--color-accent-transparent);
 			/* border: var(--border-width) solid var(--color-accent-transparent); */
 			box-shadow: 0 0 0 calc(var(--border-width)*5) var(--color-accent-transparent);

@@ -74,6 +74,7 @@
 }
 
 .sitenav__menu-link {
+    margin-top: 0.1rem;
     box-shadow: unset;
     display: inline-block;
     font-size: 1rem;
