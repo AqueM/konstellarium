@@ -1,0 +1,28 @@
+/* FOOTER */
+
+.layout__footer {
+	flex-basis: 5vh;
+	position: relative;
+	flex-grow: 1;
+	margin: 0.3rem;
+	padding: 0.5rem;
+
+	@media only screen and (min-width: 768px) {
+		margin: unset;
+	}
+}
+
+.footer__content {
+	padding: 0 2rem 0 2rem;
+	justify-content: space-between;
+	position: relative;
+	z-index: 1;
+	flex-wrap: nowrap;
+}
+
+.footer__sidebar {
+	display: block;
+	@media only screen and (min-width: 768px) {
+		display: none;
+	}
+}

@@ -1,0 +1,96 @@
+/* BASIC STYLING */
+
+.theme__block--primary {
+	background-color: var(--color-primary);
+	border-radius: var(--border-radius);
+
+	@media only screen and (min-width: 768px) {
+		background-color: var(--color-primary-transparent);
+	}
+}
+
+.theme__block--secondrary {
+	background-color: var(--color-secondrary);
+	border-radius: var(--border-radius);
+
+	@media only screen and (min-width: 768px) {
+		background-color: var(--color-secondrary-transparent);
+	}
+}
+
+.theme__block--secondrary--gradient {
+	background-color: var(--color-secondrary);
+	background-image: none;
+	border-radius: var(--border-radius);
+
+	@media only screen and (min-width: 768px) {
+		background-image: var(--gradient-secondrary-left);
+		background-color: unset;
+	}
+}
+
+.theme__block--primary--full {
+	background-color: var(--color-primary);
+	border-radius: var(--border-radius);
+}
+
+.theme__block--accent--gradient {
+	background-color: var(--color-accent);
+	background-image: none;
+	border-radius: var(--border-radius);
+
+	@media only screen and (min-width: 768px) {
+		background-image: var(--gradient-accent-left);
+		background-color: unset;
+	}
+}
+
+.theme__block--accent {
+	background-color: var(--color-accent-transparent);
+	border-radius: var(--border-radius);
+}
+
+.theme__block--accent--full {
+	background-color: var(--color-accent);
+	border-radius: var(--border-radius);
+}
+
+.theme__block--border {
+	border-top: calc(var(--border-width)/100) solid var(--border-color);
+	border-bottom: calc(var(--border-width)/100) solid var(--border-color);
+	border-radius: var(--border-radius);
+}
+
+.theme__heading {
+	padding: 0 0 0 1rem;
+	font-family: var(--font-title);
+	margin-bottom: 1%;
+	margin-top: 1%;
+	width: 100%;
+	gap: unset;
+	position: relative;
+}
+
+.theme__heading__title {
+	text-transform: uppercase;
+	font-family: var(--font-title);
+	margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+}
+
+.theme__heading__subtitle {
+	margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+	font-family: var(--font-subtitle);
+}
+
+.theme--hide {
+	display: none !important;
+}
+
+.theme--hide-toggled {
+	display: none !important;
+}
+
+.theme--no-break {
+	min-width: max-content;
+	display: inline-block;
+}

@@ -1,0 +1,17 @@
+<script type="module">
+    import PhotoSwipeLightbox from '/assets/photoswipe/photoswipe-lightbox.esm.js';
+    import PhotoSwipeDynamicCaption from 'https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+        gallerySelector: '.gallery',
+        childSelector: 'figure',
+        pswpModule: () => import('/assets/photoswipe/photoswipe.esm.js'),
+    });
+
+    const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+        // Plugins options, for example:
+        type: 'auto',
+    });
+
+    // make sure you init photoswipe core after plugins are added
+    lightbox.init();
+</script>

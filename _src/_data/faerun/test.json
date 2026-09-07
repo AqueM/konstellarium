@@ -1,0 +1,58 @@
+{
+    "displayName": "name",
+    "name": "fullname",
+    "alias": [
+        "nick",
+        "nick",
+        "nick"
+    ],
+    "bio": {
+        "age": "age",
+        "species": "race-species",
+        "sex": "sex",
+        "gender": "gender",
+        "orientation": "orientation",
+        "place of origin": "hometown",
+        "current residence": "current residence",
+        "occupation": "job"
+    },
+    "family": {
+        "name": {
+            "link": "url",
+            "relation": "relation type"
+        },
+        "name": {
+            "link": "url",
+            "relation": "relation type"
+        }
+    },
+    "personality": {
+        "alignment": "DnD alignment",
+        "motivator": "primary motivator",
+        "disposition": "primary disposition",
+        "virtue": "primary virtue",
+        "flaw": "primary flaw",
+        "interests": [
+            "list",
+            "of",
+            "interests"
+        ],
+        "likes": [
+            "list",
+            "of",
+            "likes"
+        ],
+        "dislikes": [
+            "list",
+            "of",
+            "dislikes"
+        ]
+    },
+    "looks": {
+        "eye": "eye color",
+        "hair": "hair color",
+        "height": "height",
+        "build": "weight/build",
+        "complexion": "skin color"
+    }
+}

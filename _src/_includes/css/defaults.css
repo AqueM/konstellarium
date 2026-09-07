@@ -1,0 +1,231 @@
+/* DEFAULT STYLING */
+@layer defaults {
+	* {
+		box-sizing: border-box;
+		scrollbar-color: var(--color-accent) var(--color-primary);
+		min-width: 0;
+	}
+
+	html {
+		background-color: var(--color-dark);
+	}
+
+	body {
+		margin: 0;
+		padding: 0.2rem;
+		width: 100vw;
+		overflow-x: hidden;
+
+		@media only screen and (min-width: 600px) {
+			background-position: 0% 0%;
+			background-image: url("/assets/images/layout/free_seamless-starfield-texture.jpg");
+			background-repeat: repeat;
+			background-size: auto;
+		}
+	}
+
+	img:not(.gallery *) {
+		max-width: 30vw;
+	}
+
+	article {
+		margin: 1%;
+		min-height: max-content;
+	}
+
+	section {
+		margin: 1%;
+		clear: both;
+	}
+
+	p {
+		text-indent: 1%;
+		text-align: left;
+		line-height: 1.5rem;
+		min-width: fit-content;
+	}
+
+	iframe {
+		max-height: 50vh;
+		max-width: 50vw;
+	}
+
+	ul,
+	ol {
+		line-height: 2rem;
+		max-width: max-content;
+		padding-inline-start: 0.5rem;
+
+		@media only screen and (min-width: 600px) {
+			margin-left: 1rem;
+		}
+	}
+
+	ul {
+		list-style-type: circle;
+	}
+
+	li {
+		padding: 0 0.5rem;
+	}
+
+	li:nth-child(even):not(.sitenav__menu-list *, :has(ul), :has(.theme__border-oval)) {
+		background-image: var(--gradient-emphasis);
+		border-radius: var(--border-radius-single);
+	}
+
+	a:not(.noformat, .external-code *, .theme__border-oval *, .pagination__link, .sitenav__menu-link) {
+		position: relative;
+		color: var(--color-accent);
+		padding: 0.2rem 0.5rem 0 0.5rem;
+		line-height: 1em;
+
+		&::after {
+			content: '(internal link)';
+			background-image: url("/assets/images/layout/font-awesome/right-to-bracket-solid-full.svg");
+			display: inline-block;
+			width: 1em;
+			height: 1em;
+			background-position: center;
+			background-repeat: no-repeat;
+			text-decoration: none;
+			overflow: hidden;
+			text-indent: 1em;
+			white-space: nowrap;
+			vertical-align: center;
+			margin-left: 0.2em;
+		}
+
+		&:hover {
+			display: inline;
+			transform: scale(1.1);
+			border-radius: var(--border-radius-single);
+			background-color: var(--color-accent-transparent);
+			/* border: var(--border-width) solid var(--color-accent-transparent); */
+			box-shadow: 0 0 0 calc(var(--border-width)*5) var(--color-accent-transparent);
+		}
+
+		@media only screen and (min-width: 768px) {
+			white-space: nowrap;
+		}
+	}
+
+	a {
+		position: relative;
+		color: var(--color-dark);
+		text-decoration: underline dotted;
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-family: var(--font-title);
+		letter-spacing: 0.2rem;
+	}
+
+	details {
+		border-style: dotted;
+		border-width: calc(var(--border-width)*2);
+		border-radius: var(--border-radius-single);
+		padding: 0.2rem;
+		max-width: max-content;
+	}
+
+	summary {
+		border-radius: var(--border-radius-single);
+		padding: 0.5rem;
+		width: max-content;
+	}
+
+	sup {
+		font-size: xx-small;
+	}
+
+	textarea {
+		width: 20vw;
+	}
+
+	table:not(.external-code *) {
+		border: var(--border-width) solid var(--color-dark);
+		border-radius: var(--border-radius);
+		width: 100%;
+	}
+
+	th:not(.external-code *) {
+		border-right: var(--border-width) solid var(--color-dark);
+	}
+
+	td:not(.external-code *),
+	th:not(.external-code *) {
+		border-bottom: var(--border-width) solid var(--color-dark);
+		border-right: var(--border-width) solid var(--color-dark);
+
+		span {
+			display: block;
+			margin: 2%;
+			hyphens: auto;
+			overflow: hidden;
+			text-overflow: ellipsis;
+
+			&:hover {
+				overflow: visible;
+			}
+		}
+	}
+
+	th:not(.external-code *) {
+		background-color: var(--color-accent);
+		border-radius: var(--border-radius);
+	}
+
+	tr:nth-child(even):not(.external-code *) {
+		background-color: var(--color-secondrary-transparent);
+	}
+
+	tr:hover:not(.external-code *) {
+		background-color: var(--color-secondrary);
+	}
+
+	dfn {
+		font-weight: bold;
+	}
+
+	figure {
+		padding: 0;
+		margin: 0;
+		position: relative;
+	}
+
+	pre {
+		position: relative;
+		margin: 2rem auto 1rem;
+		max-width: 60vw;
+	}
+
+	pre::before {
+		position: absolute;
+		left: 1rem;
+		z-index: 2;
+		font-size: 0.8rem;
+		background-color: var(--color-accent-transparent);
+		border: var(--border-width) dashed var(--color-secondrary);
+		padding: 0.2rem;
+		box-shadow: 0 0 0 calc(var(--border-width)*2) var(--color-accent-transparent);
+		margin: var(--border-width);
+		top: -1rem;
+	}
+
+	pre code {
+
+		padding: 1rem;
+		font-size: 1rem;
+		display: block;
+	}
+
+	code {
+		background-color: var(--color-secondrary-transparent);
+		padding: 0.2rem;
+		border-radius: calc(var(--border-radius-single)/2);
+		overflow: scroll;
+	}
+}

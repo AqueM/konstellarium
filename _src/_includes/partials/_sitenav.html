@@ -1,0 +1,21 @@
+<nav class="layout__sitenav">
+    {%- for navigationCategory in categories -%}
+    <details class="sitenav__menu-category__label" {% if page.data.category==navigationCategory %} open{% endif %}
+        name="pageMenu">
+        <summary class="sitenav__menu-category__name theme__block--accent">
+            <span class="sitenav__menu-category-text">{{navigationCategory}}</span>
+        </summary>
+        <ul class="sitenav__menu-list">
+            {%- assign menuLinks = collections.all | sort: "data.order" -%}
+            {%- for link in menuLinks -%}
+            {%- if link.data.category == navigationCategory %}
+            <li><a class="sitenav__menu-link {% if link.url==page.url %}sitenav__menu-link--active{% endif %}"
+                    href="{% if link.url %}{{ link.url }}{% else %}{{ link.data.link }}{% endif %}" {% if
+                    link.data.target %}target="{{link.data.target}}" {% endif %}>{{link.data.linkName}}</a></li>
+            {%- endif %}
+            {%- endfor %}
+        </ul>
+    </details>
+    {%- endfor %}
+    <a class="sitenav__menu-category__name theme__block--accent sitenav__menu-category-text" href="https://www.aque.fyi" target="_blank">MAIN SITE</a>
+</nav>

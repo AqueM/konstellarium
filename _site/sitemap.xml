@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+       
+        <url>
+            <loc>https://konstellarium.neocities.org//404.html</loc>
+            <lastmod>2026-08-05T16:06:03.132Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>https://konstellarium.neocities.org//assets/css/style.css</loc>
+            <lastmod>2026-09-05T12:56:55.846Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>https://konstellarium.neocities.org//konstellarium/test/</loc>
+            <lastmod>2026-09-05T14:21:41.594Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>https://konstellarium.neocities.org//</loc>
+            <lastmod>2026-09-05T16:41:26.483Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>https://konstellarium.neocities.org//areia/test/</loc>
+            <lastmod>2026-09-05T17:34:07.700Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>https://konstellarium.neocities.org//faerun/test/</loc>
+            <lastmod>2026-09-05T17:45:52.078Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+</urlset>

@@ -1,0 +1,98 @@
+.layout__sitenav {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.sitenav__menu-category__label {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.sitenav__menu-category-text {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 0.1rem;
+    font-family: var(--font-subtitle);
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        transform: unset;
+    }
+}
+
+.sitenav__menu-list {
+    position: absolute;
+    z-index: 10;
+    padding: 0.3rem 0;
+}
+
+.sitenav__menu-category__name {
+    padding: 0.5rem 1rem;
+    color: var(--color-dark);
+    border-radius: var(--border-radius-single) var(--border-radius-single) 0 0;
+    text-align: center;
+}
+
+.sitenav__menu-list {
+    line-height: 1.2rem;
+    list-style-type: none;
+    border-inline-start: 0;
+    padding-inline-start: 0;
+    margin: 0;
+    background-color: var(--color-accent-transparent);
+    border-radius: 0 0 var(--border-radius-single) var(--border-radius-single);
+    min-width: fit-content;
+}
+
+.sitenav__menu-link {
+    box-shadow: unset;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: var(--font-subtitle);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--font-color);
+    border-top: calc(var(--border-width)/100) solid var(--border-color);
+    border-bottom: calc(var(--border-width)/100) solid var(--border-color);
+    background-color: var(--color-accent-transparent);
+    border-radius: var(--border-radius-single);
+    color: var(--color-dark);
+
+    &:hover {
+        background-color: var(--color-primary-transparent);
+        border-radius: var(--border-radius-single);
+        color: var(--color-light);
+    }
+
+    @media only screen and (min-width: 768px) {
+        border: unset;
+        text-shadow: unset;
+    }
+}
+
+.sitenav__menu-link:not([target="_blank"]) {
+    &::after {
+        content: unset;
+        margin-left: unset;
+    }
+}
+
+.sitenav__menu-link--active {
+    background-color: var(--color-primary-transparent);
+    font-weight: bolder;
+    border-radius: var(--border-radius-single);
+    color: var(--color-light);
+}

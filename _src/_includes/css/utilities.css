@@ -1,0 +1,114 @@
+@layer utilities {
+
+    /* improved with the help of https://codepen.io/heydon/pen/pgBBdR */
+    [target="_blank"]:not(.external-code *),
+    [rel~="external"]:not(.external-code *),
+    [href^="http"]:not([href*="aque.fyi"], .external-code *) {
+        &::after {
+            content: '(external link)';
+            background-image: url("/assets/images/layout/font-awesome/arrow-up-right-from-square-solid-full.svg");
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-decoration: none;
+            overflow: hidden;
+            text-indent: 1em;
+            white-space: nowrap;
+            vertical-align: unset;
+            margin-left: 0.2rem;
+        }
+    }
+}
+
+/* Code courtesy of https://css-tricks.com/responsive-data-tables/ */
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+    }
+
+    td::before {
+        padding-right: 1rem;
+        font-weight: bold;
+    }
+
+    .table__prose td:nth-of-type(1):before {
+        content: "Title";
+    }
+
+    .table__prose td:nth-of-type(2):before {
+        content: "Notes";
+    }
+
+    .table__prose td:nth-of-type(3):before {
+        content: "Warnings";
+    }
+
+    .table__prose td:nth-of-type(4):before {
+        content: "Genre";
+    }
+
+    .table__prose td:nth-of-type(5):before {
+        content: "Words";
+    }
+
+    .table__prose td:nth-of-type(6):before {
+        content: "Ao3 link";
+    }
+
+    .table__prose td:nth-of-type(7):before {
+        content: "Download";
+    }
+
+    .table__prose td:nth-of-type(8):before {
+        content: "Series";
+    }
+
+    .table__prose td:nth-of-type(9):before {
+        content: "Date";
+    }
+
+    .table__poetry td:nth-of-type(1):before {
+        content: "Title";
+    }
+
+    .table__poetry td:nth-of-type(2):before {
+        content: "Date";
+    }
+
+    .table__poetry td:nth-of-type(3):before {
+        content: "Language";
+    }
+}

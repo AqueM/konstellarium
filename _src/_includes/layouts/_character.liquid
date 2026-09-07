@@ -1,0 +1,30 @@
+{% wiki-aside character %}
+<p>
+    {% block intro %}{% endblock %}
+</p>
+<div class="summary">
+    <div class="summary-title"><span class="summary-title-txt">Table of Contents</span></div>
+    <div class="summary-content">
+        <a href="#backstory">1. Backstory</a>
+        <a href="#personality">2. Personality</a>
+        <a href="#appearance">3. Appearance</a>
+        <div class="sub-summary">
+            <a href="#unique">3.1. Unique markings</a>
+        </div>
+        <a href="#skills">4. Skills and abilities</a>
+        <a href="#trivia">5. Trivia</a>
+    </div>
+</div>
+<h1 id="#backstory">Backstory</h1>
+{% block backstory %}{% endblock %}
+<h1 id="#personality">Personality</h1>
+{% block personality %}{% endblock %}
+<h1 id="#appearance">Appearance</h1>
+{% block appearance %}{% endblock %}
+<h2 id="#unique">Unique characteristics</h2>
+{% block unique %}{% endblock %}
+<h1 id="#skills">Skills and abilities</h1>
+{% block skills %}{% endblock %}
+<h1>Trivia</h1>
+{% block trivia %}{% endblock %}
+</div>

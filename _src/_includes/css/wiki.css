@@ -1,0 +1,133 @@
+.menu-top {
+    padding-bottom: 20px;
+    color: #888;
+    display: flex;
+    margin-top: 40px;
+}
+
+.menu-text {
+    padding: 10px;
+}
+
+.menu-titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.infobox {
+    float: right;
+    width: 250px;
+    /* margin-left: 30px;
+    margin-bottom: 30px; */
+}
+
+.infobox-title {
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--color-primary);
+    color: var(--font-color);
+    padding: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.infobox-figure {
+    border-left: 1px solid var(--color-accent);
+    border-right: 1px solid var(--color-accent);
+    font-size: 0px;
+    height: 300px;
+    background-size: cover !important;
+}
+
+.infobox-sub-title {
+    background: var(--color-primary);
+    color: var(--font-color);
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.infobox-element {
+    display: flex;
+    border: 1px solid var(--color-accent);
+    border-bottom: 0px;
+}
+
+.infobox-element:last-child {
+    display: flex;
+    border: 1px solid var(--color-accent);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.infobox-element-title {
+    width: 35%;
+    padding: 10px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.infobox-element-content {
+    width: 65%;
+    padding: 10px;
+    text-align: left;
+}
+
+.summary {
+    border-radius: 8px;
+    border: 1px solid var(--color-accent);
+    display: table;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.summary-title-txt:before {
+    content: '>';
+    font-family: 'cappuccicons';
+    margin-right: 8px;
+}
+
+.summary-title {
+    padding: 10px;
+    border-bottom: 1px solid var(--color-accent);
+    font-weight: bold;
+}
+
+.summary-content {
+    padding: 10px;
+}
+
+.summary-content a {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.summary-content a:hover {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+.sub-summary {
+    margin-left: 15px;
+}
+
+.content h1 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-accent);
+    display: flex;
+    margin-top: 30px !important;
+}
+
+.content h2 {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}

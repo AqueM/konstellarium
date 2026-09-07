@@ -1,0 +1,70 @@
+/* THEME */
+:root {
+	/* VARIABLES */
+	--border-radius: 1rem 1rem 1rem 1rem;
+	--border-radius-single: 0.5rem;
+	--base-transparency-value: 60%;
+	--border-width: 0px;
+
+	/* COLORS */
+	--base-color-light: #F0F8FF;
+	--base-color-dark: #1A1A2E;
+	--base-color-primary: #0F3460;
+	--base-color-secondrary: #16213E;
+	--base-color-accent: #EAE2B7;
+
+	--base-color-blue: #7FFFD4;
+	--base-color-yellow: #FFE284;
+	--base-color-red: rgb(254, 141, 141);
+
+	/* ACCESSIBILITY COLORS */
+	--base-color-darkest: black;
+	--base-color-lightest: white;
+	--base-color-middle: #16213E;
+	--base-color-contrast: #FFD700;
+	--base-color-accent-contrast: #ffe766;
+
+	/* FONTS */
+	--base-font: "luxurious_romanregular";
+	--font-base-title: "starveler";
+	--font-base-subtitle: "chasa_marelo_demoregular";
+	--dyslexic-font: 'open-dyslexic';
+	--accessible-font: system-ui;
+
+	/* SETUP */
+	/* COLORS */
+	--color-light: light-dark(var(--base-color-lightest), var(--base-color-darkest));
+	--color-dark: light-dark(var(--base-color-darkest), var(--base-color-lightest));
+	--color-primary: light-dark(var(--base-color-primary), var(--base-color-darkest));
+	--color-secondrary: light-dark(var(--base-color-secondrary), var(--base-color-middle));
+	--color-accent: light-dark(var(--base-color-accent), var(--base-color-middle));
+	/* TRANSPARENT COLOR VARIATIONS */
+	--color-primary-transparent: color-mix(in srgb, var(--color-primary) var(--base-transparency-value), transparent);
+	--color-secondrary-transparent: color-mix(in srgb, var(--color-secondrary) var(--base-transparency-value), transparent);
+	--color-accent-transparent: color-mix(in srgb, var(--color-accent) var(--base-transparency-value), transparent);
+	--color-blue-transparent: color-mix(in srgb, var(--base-color-blue) 50%, transparent);
+	/* GRADIENTS */
+	--gradient-accent-left: linear-gradient(to right, var(--color-accent) 10%, transparent);
+	--gradient-secondrary-left: linear-gradient(to right, var(--color-secondrary), transparent);
+	--gradient-accent-top: linear-gradient(to bottom, var(--color-accent), transparent);
+	--gradient-water: linear-gradient(to top, var(--base-color-blue), transparent 70%, var(--color-blue-transparent));
+	--gradient-sun: linear-gradient(320deg, transparent 90%, var(--base-color-yellow) 100%);
+	--gradient-emphasis: linear-gradient(to right, transparent 1%, var(--color-secondrary-transparent) 15%, transparent 60%);
+	/* VARIABLES */
+	--color-font: light-dark(var(--base-color-light), var(--base-color-dark));
+	--color-borders: light-dark(var(--base-color-light), var(--base-color-dark));
+
+	/* DEFAULTS */
+	color: var(--color-font);
+	font-size: 100%;
+	/* 16px default */
+	--border-color: transparent;
+	font-family: var(--accessible-font);
+	--font-title: var(--accessible-font);
+	--font-subtitle: var(--accessible-font);
+	/* MOTION */
+	/* Very short durations means JavaScript that relies on events still works */
+	animation-duration: 0.001ms !important;
+	animation-iteration-count: 1 !important;
+	transition-duration: 0.001ms !important;
+}

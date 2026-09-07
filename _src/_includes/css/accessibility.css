@@ -1,0 +1,74 @@
+/* ACCESSIBILITY */
+
+/* Light Mode */
+[data-theme="light"] {
+	color-scheme: light;
+
+	a::after,
+	.icon,
+	img {
+		filter: unset;
+	}
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+	color-scheme: dark;
+
+	img {
+		filter: brightness(.8) contrast(1.2);
+	}
+
+	a::after,
+	.icon {
+		filter: invert(1);
+	}
+}
+
+.access--motion {
+	animation-duration: unset;
+	animation-iteration-count: unset;
+	transition-duration: unset;
+}
+
+.access--high-contrast {
+	color: var(--base-color-darkest) !important;
+	--color-darkest: var(--base-color-darkest) !important;
+	--color-light: var(--base-color-darkest) !important;
+	--color-primary: var(--base-color-contrast) !important;
+	--color-secondrary: var(--base-color-contrast) !important;
+	--color-accent: var(--base-color-accent-contrast) !important;
+	--color-borders: var(--base-color-darkest) !important;
+
+	a::after,
+	.icon,
+	img {
+		filter: unset;
+	}
+}
+
+.access--complexity {
+	--border-width: 1px;
+	--border-color: var(--color-borders);
+}
+
+.access--special-font {
+	font-family: var(--base-font);
+	--font-title: var(--font-base-title);
+	--font-subtitle: var(--font-base-subtitle);
+}
+
+.access--dyslexic-font {
+	font-family: var(--accessible-font);
+	--accessible-font: var(--dyslexic-font);
+	--font-title: var(--dyslexic-font);
+	--font-subtitle: var(--dyslexic-font);
+}
+
+.access--large-font {
+	font-size: larger;
+}
+
+.access--font {
+	font-family: var(--accessible-font);
+}
