@@ -30,38 +30,61 @@ module.exports = async function (eleventyConfig) {
     // require("./config/collections.js")(eleventyConfig);
 
     eleventyConfig.addShortcode("wiki-aside", function (character) {
-        var intro = `<div class="infobox-title">
-        Information
-    </div>
-    <div class="infobox-figure"
+        var imageHTML = `<div class="infobox-figure"
         style="background:url('${character.image}')">
-    </div>
-    <div class="infobox-element">
+    </div>`
+
+        var bioHTML = `<div class="infobox-element">
         <div class="infobox-element-title">Fullname</div>
-        <div class="infobox-element-content">${character.name}</div>
-    </div>
+        <div class="infobox-element-content">${character.name}</div></div>
     <div class="infobox-element">
         <div class="infobox-element-title">Aliases</div>
         <div class="infobox-element-content">`;
+
         var aliasesHTML = ``;
         if (character.alias) {
-            aliasesHTML = `<ul>`;
+            aliasesHTML = `<ul class="infobox-list">`;
             character.alias.forEach(element => aliasesHTML += `<li>${element}</li>`)
             aliasesHTML += (`</ul>`);
         }
-        var bioHTML = "";
-        Object.keys(character.bio).forEach(key =>{
-            bioHTML += `<div class="infobox-element">
-        <div class="infobox-element-title">${key}</div>
-        <div class="infobox-element-content">${character.bio[key]}</div>
-    </div>`});
+
+        var infoHTML = ``;
+        Object.keys(character.info).forEach(key => {
+            if (typeof character.info[key] === 'object' && key !== null) {
+                infoHTML += `<div class="infobox-sub-title">${key}</div>`
+                Object.keys(character.info[key]).forEach(innerKey => {
+                    if (typeof character.info[key][innerKey] === 'object') {
+                        infoHTML += `<div class="infobox-element">
+        <div class="infobox-element-title">${innerKey}</div>
+        <div class="infobox-element-content"><ul class="infobox-list">`;
+                        character.info[key][innerKey].forEach(element => {
+                            infoHTML += `<li>${element}</li>`
+                        })
+                        infoHTML += `</ul></div></div>`
+                    } else {
+                        infoHTML += `<div class="infobox-element">
+        <div class="infobox-element-title">${innerKey}</div>
+        <div class="infobox-element-content">${character.info[key][innerKey]}</div></div>`
+                    }
+                });
+            }
+        })
+
+        var relationsHTML = `<div class="infobox-sub-title">relations</div><div class="infobox-element">
+        <div class="infobox-element-content"><ul class="infobox-list">`;
+        Object.keys(character.relations).forEach(key => {
+            relationsHTML += `<li><a href="${character.relations[key].link}"><em>${key}</em></a>(${character.relations[key].relation})</li>`
+        })
+        relationsHTML += `</ul></div></div>`
+
         return `<aside class="infobox">
-        ${intro}    
+        <div class="infobox-title">Information</div>
+        ${imageHTML}
+        ${bioHTML}    
         ${aliasesHTML}
-        </div>
-    </div>
-    <div class="infobox-sub-title">Bio</div>
-            ${bioHTML}
-</aside>`;
+        </div></div>
+        ${infoHTML}
+        ${relationsHTML}
+        </aside>`;
     });
 }

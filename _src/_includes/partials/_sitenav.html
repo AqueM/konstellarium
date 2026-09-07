@@ -1,8 +1,8 @@
 <nav class="layout__sitenav">
     {%- for navigationCategory in categories -%}
-    <details class="sitenav__menu-category__label" {% if page.data.category==navigationCategory %} open{% endif %}
+    <details class="sitenav__menu-category__label theme__block--accent" {% if page.data.category==navigationCategory %} open{% endif %}
         name="pageMenu">
-        <summary class="sitenav__menu-category__name theme__block--accent">
+        <summary class="sitenav__menu-category__name">
             <span class="sitenav__menu-category-text">{{navigationCategory}}</span>
         </summary>
         <ul class="sitenav__menu-list">
@@ -17,5 +17,5 @@
         </ul>
     </details>
     {%- endfor %}
-    <a class="sitenav__menu-category__name theme__block--accent sitenav__menu-category-text" href="https://www.aque.fyi" target="_blank">MAIN SITE</a>
+    <a class="sitenav__menu-mainsite-link theme__block--accent sitenav__menu-category-text" href="https://www.aque.fyi" target="_blank">main site</a>
 </nav>

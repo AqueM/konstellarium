@@ -1,28 +1,41 @@
 .layout__sitenav {
     margin: 0;
+    color: var(--color-dark);
+    text-align: center;
+    font-family: var(--font-subtitle);
+    color: var(--color-dark);
+    gap: 0.2rem;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
 
     @media only screen and (min-width: 768px) {
         flex-direction: row;
         gap: 2rem;
-        align-items: center;
-        justify-content: center;
     }
 }
-
 
 .sitenav__menu-category__label {
     position: relative;
     margin: 0;
     padding: 0;
+    max-width: unset;
+    border-radius: var(--border-radius-single) var(--border-radius-single) 0 0;
+    min-width: 10rem;
 }
+
+.sitenav__menu-mainsite-link {
+    border-radius: var(--border-radius-single) var(--border-radius-single) 0 0;
+    line-height: 2em;
+    padding: 0.15rem 2rem;
+    min-width: 10rem;
+}
+
 
 .sitenav__menu-category-text {
     cursor: pointer;
     text-transform: uppercase;
-    margin-bottom: 0.1rem;
-    font-family: var(--font-subtitle);
     letter-spacing: 0.1rem;
     font-weight: bold;
     text-decoration: none;
@@ -33,16 +46,19 @@
 }
 
 .sitenav__menu-list {
-    position: absolute;
     z-index: 10;
     padding: 0.3rem 0;
+
+    @media only screen and (min-width: 768px) {
+        position: absolute;
+    }
 }
 
 .sitenav__menu-category__name {
     padding: 0.5rem 1rem;
     color: var(--color-dark);
-    border-radius: var(--border-radius-single) var(--border-radius-single) 0 0;
     text-align: center;
+    width: inherit;
 }
 
 .sitenav__menu-list {
@@ -53,7 +69,8 @@
     margin: 0;
     background-color: var(--color-accent-transparent);
     border-radius: 0 0 var(--border-radius-single) var(--border-radius-single);
-    min-width: fit-content;
+    min-width: 10rem;
+    max-width: unset;
 }
 
 .sitenav__menu-link {
@@ -70,6 +87,7 @@
     background-color: var(--color-accent-transparent);
     border-radius: var(--border-radius-single);
     color: var(--color-dark);
+    width: 100%;
 
     &:hover {
         background-color: var(--color-primary-transparent);

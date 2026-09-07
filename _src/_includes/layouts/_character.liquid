@@ -1,4 +1,5 @@
-{% wiki-aside character %}
+<div class="infobox-desktop">{% wiki-aside character %}</div>
+<details class="infobox-mobile"><summary class="theme__block--primary">Details</summary>{% wiki-aside character %}</details>
 <p>
     {% block intro %}{% endblock %}
 </p>
@@ -15,16 +16,18 @@
         <a href="#trivia">5. Trivia</a>
     </div>
 </div>
-<h1 id="#backstory">Backstory</h1>
+<h2 id="#backstory">Backstory</h2>
 {% block backstory %}{% endblock %}
-<h1 id="#personality">Personality</h1>
+<h2 id="#personality">Personality</h2>
 {% block personality %}{% endblock %}
-<h1 id="#appearance">Appearance</h1>
+<h2 id="#appearance">Appearance</h2>
 {% block appearance %}{% endblock %}
-<h2 id="#unique">Unique characteristics</h2>
+<h3 id="#unique">Unique characteristics</h3>
 {% block unique %}{% endblock %}
-<h1 id="#skills">Skills and abilities</h1>
+<h2 id="#skills">Skills and abilities</h2>
 {% block skills %}{% endblock %}
-<h1>Trivia</h1>
+<h2 id="#trivia">Trivia</h2>
 {% block trivia %}{% endblock %}
-</div>
+<h2 id="#meta">Meta</h2>
+{% block meta %}{% endblock %}
+<span style="clear: both; display:block;"></span>

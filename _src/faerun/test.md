@@ -1,8 +1,12 @@
 ---
 linkName: Test Character from Faerun
+character: faerun.test
 ---
 {% layout "layouts/_character.liquid" %}
 {% assign character = faerun.test %}
+
+{% block intro %}Character Intro{% endblock %}
+
 {% block backstory %}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu felis turpis. Aliquam efficitur dolor non elit vehicula, non facilisis felis porta. Sed ac dictum orci. Fusce venenatis suscipit mi eu tincidunt. Phasellus posuere, magna id egestas laoreet, nibh elit tempor nibh, et laoreet odio urna at eros. Donec mi sapien, molestie at auctor at, varius vel massa. Integer pellentesque enim eu porta convallis. Pellentesque eget dui non arcu luctus vestibulum. Nam finibus libero nisi, et finibus magna efficitur in. Curabitur elementum quis massa eget tincidunt. Etiam imperdiet gravida massa, non commodo urna gravida et. Phasellus non tellus id nunc iaculis mattis sit amet rhoncus urna. Quisque eget libero id velit porta condimentum.
 {% endblock %}
@@ -25,3 +29,7 @@ Nullam ut magna commodo, tincidunt tellus ac, tempus magna. Orci varius natoque 
 
 {% block trivia %}
 Nullam ut magna commodo, tincidunt tellus ac, tempus magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam gravida mi porta, vehicula massa sit amet, sollicitudin mauris. Duis ex felis, pellentesque quis porttitor elementum, euismod quis mi. In vitae convallis nibh. Etiam suscipit varius nunc, eu hendrerit nibh volutpat at. Praesent congue enim quis commodo maximus. Donec fermentum cursus erat vel tincidunt. Vivamus interdum consequat odio eget cursus. Aliquam mi ipsum, mollis sed diam a, aliquam scelerisque massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed suscipit efficitur lacus, rutrum sagittis mauris faucibus quis. Quisque accumsan vulputate rutrum. {% endblock %}
+
+{% block meta %}
+Maecenas quis massa lorem. Donec varius orci a odio ullamcorper, sed vestibulum nisl auctor. Aliquam ipsum ante, tincidunt quis elementum vitae, ultricies non sem. Nullam imperdiet odio ut est tincidunt convallis. Quisque quis volutpat neque. Vestibulum sed mi et magna vehicula ultrices ullamcorper in ligula. In id metus enim. Morbi feugiat nisi quis congue euismod. Nam luctus laoreet eros. Curabitur commodo fermentum nulla sed hendrerit. Nam varius odio et fringilla dapibus. Vestibulum sollicitudin erat in orci fermentum porta. Nullam ut convallis mi. In hac habitasse platea dictumst. In ac nunc viverra, semper nunc non, pellentesque eros. Vestibulum ullamcorper egestas tellus at efficitur.
+{% endblock %}
