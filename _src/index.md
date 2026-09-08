@@ -16,7 +16,7 @@ All of the characters here are copyrighted, which means I don't allow for anyone
 
 ## Content warnings
 
-Most of my characters are adults, and thus some stories or personalities detailed on this site will touch upon  around adult topics, such as their sexual history. Be aware of that going forth.
+Most of my characters are adults, and thus some stories or personalities detailed on this site will touch upon adult topics, such as their sexual history. Be aware of that going forth.
 
 Any graphic descriptions will be marked and contained within a separate subpage, so you won't see any porn unknowlingly, but you may come upon a list of someone's kinks, for example.   
 
