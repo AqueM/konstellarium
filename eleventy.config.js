@@ -80,7 +80,7 @@ module.exports = async function (eleventyConfig) {
         return `<aside class="infobox">
         <div class="infobox-title">Information</div>
         ${imageHTML}
-        ${bioHTML}    
+        ${infoHTML}    
         ${aliasesHTML}
         </div></div>
         ${infoHTML}
