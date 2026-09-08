@@ -11,6 +11,7 @@
         "species": "race-species",
         "sex": "sex",
         "gender": "gender",
+        "pronouns": "they/them",
         "orientation": "orientation",
         "place of origin": "hometown",
         "current residence": "current residence",
