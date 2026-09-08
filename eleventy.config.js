@@ -73,8 +73,12 @@ module.exports = async function (eleventyConfig) {
         var relationsHTML = `<div class="infobox-sub-title">relations</div><div class="infobox-element">
         <div class="infobox-element-content"><ul class="infobox-list">`;
         Object.keys(character.relations).forEach(key => {
+            if(character.relations[key].link){
             relationsHTML += `<li><a href="${character.relations[key].link}"><em>${key}</em></a> (${character.relations[key].relation})</li>`
-        })
+            } else {
+            relationsHTML += `<li><em>${key}</em> (${character.relations[key].relation})</li>`
+            }
+            })
         relationsHTML += `</ul></div></div>`
 
         return `<aside class="infobox">
