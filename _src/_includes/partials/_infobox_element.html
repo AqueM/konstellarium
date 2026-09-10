@@ -1,0 +1,28 @@
+<div class="content__infobox-element">
+    {% assign contents = element[1] %}
+    {%- assign name = element[0] -%}
+
+    {%- if contents.link -%}
+    <div class="content__infobox-element-title"><a href="{{contents.link}}">{{name}}</a></div>
+    {%- else -%}
+    <div class="content__infobox-element-title">{{name}}</div>
+    {%- endif -%}
+
+    {%- if contents.first -%}
+    <div class="content__infobox-element-content">
+        <ul class="content__infobox-list">
+            {%- for subelement in contents -%}
+            <li>{{subelement}}</li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    {%- else -%}
+    {%- if contents[1] -%}
+    <div class="content__infobox-element-content">{{contents}}</div>
+    {%- else -%}
+
+    <div class="content__infobox-element-content">{%- for element in contents -%}{%- if element[0] != "link"
+        -%}{{element[1]}} {% endif %}{%- endfor -%}</div>
+    {%- endif -%}
+    {%- endif -%}
+</div>

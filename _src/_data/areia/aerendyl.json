@@ -1,0 +1,72 @@
+{
+  "basic": {
+    "fullname": "Aerendyl Liaric Nesalor of Areia",
+    "aliases": ["Ren (childhood name)"]
+  },
+  "data": {
+    "bio": {
+      "age": "279",
+      "species": "elf",
+      "sex": "male",
+      "gender": "man",
+      "pronouns": "he/him",
+      "orientation": "pansexual",
+      "place of origin": "Areia",
+      "current residence": "Areia",
+      "occupation": "King"
+    },
+    "personality": {
+      "alignment": "lawful good",
+      "motivator": "nobility",
+      "disposition": "joyful",
+      "virtue": "reliability",
+      "flaw": "impatience",
+      "interests": ["fashion"],
+      "likes": ["children", "good booze", "cuddles", "being appreciated"],
+      "dislikes": ["his loved one being threatened", "lies"]
+    },
+    "looks": {
+      "eye": "hazel",
+      "hair": "blonde",
+      "height": "above average",
+      "build": "heavy, muscular",
+      "complexion": "fair"
+    },
+    "relations": {
+      "Ivellias Nailo": {
+        "link": "/areia/ivellias",
+        "relation": "lover"
+      },
+      "Eylana Nesalor": {
+        "link": "/areia/eylana",
+        "relation": "wife"
+      },
+      "Py Nesalor": {
+        "relation": "child"
+      },
+      "Desaly Nesalor nee Thelen": {
+        "relation": "mother"
+      },
+      "Tharan Nesalor": {
+        "relation": "father"
+      },
+      "Yelenia Nesalor": {
+        "relation": "younger sister"
+      },
+      "Ren Nesalor": {
+        "relation": "younger brother"
+      },
+      "Zelos Thelen": {
+        "relation": "uncle"
+      },
+      "Pelleas Thelen": {
+        "relation": "cousin"
+      }
+    },
+    "groups": {
+      "Areian Royal Guard": {
+        "description": "ex-member"
+      }
+    }
+  }
+}

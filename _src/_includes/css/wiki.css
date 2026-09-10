@@ -1,163 +1,157 @@
-.menu-top {
-    padding-bottom: 20px;
-    color: #888;
-    display: flex;
-    margin-top: 40px;
+/* Copyright (c) 2026 by upi (https://codepen.io/brutforcekenobi/pen/oNoLbBG)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+.content__intro {
+  order: -1;
 }
 
-.menu-text {
-    padding: 10px;
+.content__main-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
 }
 
-.menu-titre {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 1px;
+.layout__columns {
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: 600px) {
+    flex-direction: row;
+  }
+}
+.content__infobox {
+  flex-basis: 20%;
+  min-width: fit-content;
+  @media only screen and (max-width: 600px) {
+    order: -1;
+  }
 }
 
-.infobox-mobile {
-    display: block;
-    max-width: unset;
+.content__infobox-mobile {
+  display: block;
+  max-width: unset;
 
-    @media only screen and (min-width: 600px) {
-        display: none;
-    }
-}
-
-.infobox-desktop {
+  @media only screen and (min-width: 600px) {
     display: none;
-
-    @media only screen and (min-width: 600px) {
-        display: block;
-    }
+  }
 }
 
-.infobox {
-    width: 100%;
-    min-width: fit-content;
-    margin: 0.2rem;
+.content__infobox-desktop {
+  display: none;
 
-    @media only screen and (min-width: 600px) {
-        float: right;
-        width: 20%;
-        margin: 1rem 0 1rem 1rem;
-    }
+  @media only screen and (min-width: 600px) {
+    display: block;
+  }
 }
 
-.infobox-title {
-    font-size: 16px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-color: var(--color-primary);
-    color: var(--font-color);
-    padding: 18px;
-    font-weight: 700;
-    text-align: center;
+.content__infobox-title {
+  font-size: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: var(--color-primary);
+  color: var(--font-color);
+  padding: 18px;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid var(--color-accent);
+  text-transform: capitalize;
 }
 
-.infobox-figure {
-    border-left: 1px solid var(--color-accent);
-    border-right: 1px solid var(--color-accent);
-    font-size: 0px;
-    height: 300px;
-    background-size: cover !important;
+.content__infobox-figure {
+  border-left: 1px solid var(--color-accent);
+  border-right: 1px solid var(--color-accent);
+  font-size: 0px;
+  height: 300px;
+  background-size: cover !important;
 }
 
-.infobox-sub-title {
-    background: var(--color-primary);
-    color: var(--font-color);
-    padding: 10px;
-    font-weight: bold;
-    text-align: center;
-    opacity: 0.5;
+.content__infobox-sub-title {
+  background: var(--color-primary);
+  color: var(--font-color);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.5;
+  border-left: 1px solid var(--color-accent);
+  border-right: 1px solid var(--color-accent);
+  border-top: 1px solid var(--color-accent);
+  text-transform: capitalize;
 }
 
-.infobox-element {
-    display: flex;
-    border: 1px solid var(--color-accent);
-    border-bottom: 0px;
+.content__infobox-element {
+  display: flex;
+  border: 1px solid var(--color-accent);
+  border-bottom: 0px;
 }
 
-.infobox-element:last-child {
-    display: flex;
-    border: 1px solid var(--color-accent);
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+.content__infobox-element:last-child {
+  display: flex;
+  border: 1px solid var(--color-accent);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
-.infobox-element-title {
-    width: 35%;
-    padding: 10px;
-    font-weight: 700;
-    text-align: left;
+.content__infobox-element-title {
+  width: 35%;
+  padding: 10px;
+  font-weight: 700;
+  text-align: left;
 }
 
-.infobox-element-content {
-    flex-basis: 65%;
-    padding: 10px;
-    text-align: left;
-    flex-grow: 1;
+.content__infobox-element-content {
+  flex-basis: 65%;
+  padding: 10px;
+  text-align: left;
+  flex-grow: 1;
 }
 
-.infobox-list {
-    line-height: 1.2rem;
-    margin: 0;
-    padding-inline-start: 1rem;
+.content__infobox-list {
+  line-height: 1.2rem;
+  margin: 0;
+  padding-inline-start: 1rem;
 }
 
-.summary {
+.content__toc {
+  display: none;
+  @media only screen and (min-width: 600px) {
     border-radius: 8px;
     border: 1px solid var(--color-accent);
     display: table;
     width: 200px;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
 }
 
-.summary-title-txt:before {
-    content: '>';
-    font-family: 'cappuccicons';
-    margin-right: 8px;
+.content__toc-title-txt:before {
+  content: ">";
+  font-family: "cappuccicons";
+  margin-right: 8px;
 }
 
-.summary-title {
-    padding: 10px;
-    border-bottom: 1px solid var(--color-accent);
-    font-weight: bold;
+.content__toc-title {
+  padding: 10px;
+  border-bottom: 1px solid var(--color-accent);
+  font-weight: bold;
 }
 
-.summary-content {
-    padding: 10px;
+.content__toc-content {
+  padding: 10px;
 }
 
-.summary-content a {
-    display: block;
-    padding: 5px;
-    font-weight: bold;
-    margin: 4px;
+.content__toc-content a {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  margin: 4px;
 }
 
-.summary-content a:hover {
-    background: var(--color-primary);
-    border-radius: 5px;
+.content__toc-content a:hover {
+  background: var(--color-primary);
+  border-radius: 5px;
 }
-
-.sub-summary {
-    margin-left: 15px;
-}
-
-/* 
-.content h1 {
-    font-size: 22px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--color-accent);
-    display: flex;
-    margin-top: 30px !important;
-} */
-/* 
-.content h2 {
-    font-size: 18px;
-    margin-left: 20px;
-    margin-bottom: 15px;
-} */

@@ -1,0 +1,13 @@
+<p class="content__intro"> 
+{% block intro %}intro test{% endblock %}
+</p>
+<section>
+{% block content %}{% endblock %}
+</section>
+<span style="clear: both; display:block;"></span>
+</article>
+
+<aside class="content__infobox">
+<div class="content__infobox-desktop">{% include "partials/_infobox.html" character: character %}</div>
+<details class="content__infobox-mobile"><summary class="theme__block--primary">Details</summary>{% include "partials/_infobox.html" character: character %}</details>
+</aside>

@@ -13,8 +13,12 @@
   "type": "commonjs",
   "dependencies": {
     "@11ty/eleventy": "^3.1.6",
+    "markdown-it-anchor": "^10.0.0",
     "markdown-it-attrs": "^5.0.0",
     "photoswipe": "^5.4.4",
     "photoswipe-dynamic-caption-plugin": "^1.2.7"
+  },
+  "devDependencies": {
+    "@uncenter/eleventy-plugin-toc": "^2.1.2"
   }
 }

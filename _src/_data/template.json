@@ -1,23 +1,24 @@
 {
-    "displayName": "name",
-    "name": "fullname",
-    "alias": [
-        "nick",
-        "nick",
-        "nick"
-    ],
-    "bio": {
-        "age": "age",
-        "species": "race-species",
-        "sex": "sex",
-        "gender": "gender",
-        "pronouns": "they/them",
-        "orientation": "orientation",
-        "place of origin": "hometown",
-        "current residence": "current residence",
-        "occupation": "job"
+    "basic": {
+        "fullname": "fullname",
+        "aliases": [
+            "nick",
+            "nick",
+            "nick"
+        ]
     },
-    "info": {
+    "data": {
+        "bio": {
+            "age": "age",
+            "species": "race-species",
+            "sex": "sex",
+            "gender": "gender",
+            "pronouns": "they/them",
+            "orientation": "orientation",
+            "place of origin": "hometown",
+            "current residence": "current residence",
+            "occupation": "job"
+        },
         "personality": {
             "alignment": "DnD alignment",
             "motivator": "primary motivator",
@@ -56,6 +57,14 @@
         "name2": {
             "link": "url",
             "relation": "relation type"
-        }
+    },
+    "groups": {
+      "The Enchanting Cirque of Layar": {
+        "description": "wandering circus his  family was a part of"
+      },
+      "Lyrebirds": {
+        "description": "the changeling troupe that included his family"
+      }
     }
+  }
 }

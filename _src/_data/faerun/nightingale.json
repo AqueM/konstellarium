@@ -1,0 +1,66 @@
+{
+  "basic": {
+    "fullname": "Robin of the Lyrebirds",
+    "aliases": ["Nightingale", "Jay", "Wren", "Starling", "Passerine"]
+  },
+  "data": {
+    "bio": {
+      "age": "26",
+      "species": "changeling",
+      "sex": "male",
+      "gender": "man",
+      "pronouns": "he/him",
+      "orientation": "bisexual",
+      "place of origin": "nomadic camp",
+      "current residence": "wandering",
+      "occupation": "bard"
+    },
+    "personality": {
+      "alignment": "neutral good",
+      "motivator": "liberation",
+      "disposition": "curious",
+      "virtue": "caring",
+      "flaw": "cowardice",
+      "interests": ["music", "acrobatics", "history"],
+      "likes": ["songbirds", "lutes", "poetry", "jewelry and trinkets"],
+      "dislikes": ["roses", "seafood", "dislikes"]
+    },
+    "looks": {
+      "eye": "blue/white",
+      "hair": "white",
+      "height": "average",
+      "build": "lean",
+      "complexion": "pale white"
+    },
+    "relations": {
+      "Lark": {
+        "relation": "mother",
+        "race": "changeling"
+      },
+      "Ruz": {
+        "relation": "father",
+        "race": "changeling"
+      },
+      "Teal": {
+        "relation": "aunt",
+        "race": "changeling"
+      },
+      "Tag": {
+        "relation": "uncle",
+        "race": "changeling"
+      },
+      "Bits": {
+        "relation": "family friend",
+        "race": "changeling"
+      }
+    },
+    "groups": {
+      "The Enchanting Cirque of Layar": {
+        "description": "wandering circus his  family was a part of"
+      },
+      "Lyrebirds": {
+        "description": "the changeling troupe that included his family"
+      }
+    }
+  }
+}

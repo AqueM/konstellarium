@@ -1,0 +1,63 @@
+{
+  "basic": {
+    "fullname": "Eylana Nesalor nee Navarra of Areia",
+    "aliases": ["Sumi (childhood name)"]
+  },
+  "data": {
+    "bio": {
+      "age": "231",
+      "species": "elf",
+      "sex": "female",
+      "gender": "genderfluid",
+      "pronouns": "she/her",
+      "orientation": "heterosexual",
+      "place of origin": "Cormyr",
+      "current residence": "Areia",
+      "occupation": "Queen, Royal Archmage"
+    },
+    "personality": {
+      "alignment": "neutral good",
+      "motivator": "understanding",
+      "disposition": "calm",
+      "virtue": "fairness",
+      "flaw": "pride",
+      "interests": ["academia and research", "arcane arts", "etiquette"],
+      "likes": [
+        "pretty dresses",
+        "well-formatted books",
+        "good wine",
+        "deep discussions"
+      ],
+      "dislikes": ["children", "being late", "irrationality"]
+    },
+    "looks": {
+      "eye": "brown",
+      "hair": "black, curly",
+      "height": "average",
+      "build": "average",
+      "complexion": "black"
+    },
+    "relations": {
+      "Aerendyl Nesalor": {
+        "link": "/areia/aerendyl",
+        "relation": "husband"
+      },
+      "Ivellias Nailo": {
+        "link": "/areia/ivellias",
+        "relation": "lover"
+      },
+      "Py Nesalor": {
+        "relation": "child"
+      },
+      "IPRE members": {
+        "relation": "acquaintances"
+      }
+    },
+    "groups": {
+      "IPRE": {
+        "link": "https://www.aque.fyi/resources/characters/ipre/",
+        "description": "member"
+      }
+    }
+  }
+}

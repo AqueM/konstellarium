@@ -1,0 +1,15 @@
+<div class="content__infobox-title">Information</div>
+{%- assign portrait = "/assets/images/placeholder.webp" -%}
+{%- if character.image -%}
+{%- assign portrait = character.image -%}
+{%- endif -%}
+<div class="content__infobox-figure" style="background:url('{{portrait}}')"></div>
+{%- for element in character.basic -%}
+{%- include "partials/_infobox_element.html" element: element -%}
+{%- endfor -%}
+{%- for group in character.data -%}
+<div class="content__infobox-sub-title"><strong>{{group[0]}}</strong></div>
+{%- for element in group[1] -%}
+{%- include "partials/_infobox_element.html" element: element -%}
+{%- endfor -%}
+{%- endfor -%}

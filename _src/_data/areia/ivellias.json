@@ -1,0 +1,54 @@
+{
+  "basic": {
+    "fullname": "Ivellias Nailo",
+    "aliases": ["Captain Consort", "Ivy"]
+  },
+  "data": {
+    "bio": {
+      "age": "64",
+      "species": "half-elf",
+      "sex": "male",
+      "gender": "genderfluid",
+      "pronouns": "they/them",
+      "orientation": "bisexual",
+      "place of origin": "Iriaebor",
+      "current residence": "Areia",
+      "occupation": "Captain of the Royal Guard"
+    },
+    "personality": {
+      "alignment": "chaotic good",
+      "motivator": "beneficence",
+      "disposition": "reserved",
+      "virtue": "empathy",
+      "flaw": "distrustful",
+      "interests": ["fashion"],
+      "likes": ["the color blue", "travelling", "good booze", "bar fights"],
+      "dislikes": ["being tied down", "flowers"]
+    },
+    "looks": {
+      "eye": "brown",
+      "hair": "ginger and white, curly",
+      "height": "average",
+      "build": "heavy, muscular",
+      "complexion": "fair, freckled"
+    },
+    "relations": {
+      "Aerendyl Nesalor": {
+        "link": "/areia/aerendyl",
+        "relation": "lover"
+      },
+      "Eylana Nesalor": {
+        "link": "/areia/eylana",
+        "relation": "lover"
+      }
+    },
+    "groups": {
+      "Areian Royal Guard": {
+        "description": "captain"
+      },
+      "Elturel tieflings": {
+        "description": "honorary tiefling"
+      }
+    }
+  }
+}
