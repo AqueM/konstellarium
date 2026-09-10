@@ -46,7 +46,7 @@
 	p {
 		text-indent: 1%;
 		text-align: left;
-		line-height: 1.5rem;
+		line-height: 1.25rem;
 		min-width: fit-content;
 	}
 
@@ -107,7 +107,7 @@
 	}
 
 	h1 {
-		font-family: var(--font-title);
+		font-family: var(--font-subtitle);
 		letter-spacing: 0.2rem;
 	}
 

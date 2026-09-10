@@ -60,6 +60,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: center;
   border: 1px solid var(--color-accent);
   text-transform: capitalize;
+  font-family: var(--font-subtitle);
+  letter-spacing: 0.2rem;
 }
 
 .content__infobox-figure {
@@ -81,6 +83,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border-right: 1px solid var(--color-accent);
   border-top: 1px solid var(--color-accent);
   text-transform: capitalize;
+  font-family: var(--font-subtitle);
+  letter-spacing: 0.2rem;
 }
 
 .content__infobox-element {
@@ -130,7 +134,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .content__toc-title-txt:before {
   content: ">";
-  font-family: "cappuccicons";
   margin-right: 8px;
 }
 
@@ -138,6 +141,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding: 10px;
   border-bottom: 1px solid var(--color-accent);
   font-weight: bold;
+  font-family: var(--font-subtitle);
 }
 
 .content__toc-content {
