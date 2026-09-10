@@ -1,6 +1,6 @@
 {
   "basic": {
-    "fullname": "Robin of the Lyrebirds",
+    "full name": "Robin of the Lyrebirds",
     "aliases": ["Nightingale", "Jay", "Wren", "Starling", "Passerine"]
   },
   "data": {
@@ -10,7 +10,7 @@
       "sex": "male",
       "gender": "man",
       "pronouns": "he/him",
-      "orientation": "bisexual",
+      "orientation": "homosexual",
       "place of origin": "nomadic camp",
       "current residence": "wandering",
       "occupation": "bard"
@@ -23,7 +23,7 @@
       "flaw": "cowardice",
       "interests": ["music", "acrobatics", "history"],
       "likes": ["songbirds", "lutes", "poetry", "jewelry and trinkets"],
-      "dislikes": ["roses", "seafood", "dislikes"]
+      "dislikes": ["roses", "seafood", "tattoos"]
     },
     "looks": {
       "eye": "blue/white",
@@ -35,23 +35,23 @@
     "relations": {
       "Lark": {
         "relation": "mother",
-        "race": "changeling"
+        "race": "(changeling)"
       },
       "Ruz": {
         "relation": "father",
-        "race": "changeling"
+        "race": "(changeling)"
       },
       "Teal": {
         "relation": "aunt",
-        "race": "changeling"
+        "race": "(changeling)"
       },
       "Tag": {
         "relation": "uncle",
-        "race": "changeling"
+        "race": "(changeling)"
       },
       "Bits": {
         "relation": "family friend",
-        "race": "changeling"
+        "race": "(changeling)"
       }
     },
     "groups": {
